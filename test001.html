@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sticker Promotion</title>
+<style>
+    /* Styles for body */
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f9f9f9;
+    }
+
+    /* Styles for slider container */
+    .slider {
+        width: 80%;
+        max-width: 800px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 20px;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+    }
+
+    /* Styles for individual slides */
+    .slide {
+        width: 100%;
+        display: none;
+        text-align: center; /* Center the images */
+        animation: fadeInOut 1s ease-in-out infinite alternate;
+    }
+
+    .slide img {
+        width: 70%; /* Set the width of the images */
+        max-width: 300px;
+        height: auto;
+        border-radius: 15px; /* Add rounded corners to the images */
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Add shadow effect to the images */
+        transition: transform 0.3s ease-in-out; /* Add transition effect on hover */
+    }
+
+    .slide img:hover {
+        transform: scale(1.05); /* Increase size on hover */
+    }
+
+    /* Style for call-to-action section */
+    .cta {
+        background-color: #4CAF50; /* Green */
+        color: white;
+        padding: 40px 20px;
+        text-align: center;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    /* Animation for fading in and out */
+    @keyframes fadeInOut {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    /* Styles for navigation buttons */
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        border: none;
+        z-index: 2;
+        border-radius: 50%;
+        font-size: 20px;
+        transition: background-color 0.3s ease;
+    }
+
+    .prev {
+        left: 10px;
+    }
+
+    .next {
+        right: 10px;
+    }
+
+    .prev:hover, .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+</style>
+</head>
+<body>
+
+<div class="slider" id="slider">
+    <!-- Slide 1 -->
+    <div class="slide">
+        <img src="img\im (1).JPG" alt="Sticker 1">
+    </div>
+    <!-- Slide 2 -->
+    <div class="slide">
+        <img src="img\im (2).JPG" alt="Sticker 2">
+    </div>
+    <!-- Slide 3 -->
+    <div class="slide">
+        <img src="img\im (3).JPG" alt="Sticker 3">
+    </div>
+    <!-- Add slides for the remaining images -->
+    <!-- Slide 4 -->
+    <div class="slide">
+        <img src="img\im (4).JPG" alt="Sticker 4">
+    </div>
+    <!-- Slide 5 -->
+    <div class="slide">
+        <img src="img\im (5).JPG" alt="Sticker 5">
+    </div>
+    <!-- Slide 6 -->
+    <div class="slide">
+        <img src="img\im (6).JPG" alt="Sticker 6">
+    </div>
+    <!-- Slide 7 -->
+    <div class="slide">
+        <img src="img\im (7).JPG" alt="Sticker 7">
+    </div>
+    <!-- Slide 8 -->
+    <div class="slide">
+        <img src="img\im (8).JPG" alt="Sticker 8">
+    </div>
+    <!-- Slide 9 -->
+    <div class="slide">
+        <img src="img\im (9).JPG" alt="Sticker 9">
+    </div>
+    <!-- Slide 10 -->
+    <div class="slide">
+        <img src="img\im (10).JPG" alt="Sticker 10">
+    </div>
+    <!-- Slide 11 -->
+    <div class="slide">
+        <img src="img\im (11).JPG" alt="Sticker 11">
+    </div>
+    <!-- Slide 12 -->
+    <div class="slide">
+        <img src="img\im (12).JPG" alt="Sticker 12">
+    </div>
+    <!-- Slide 13 -->
+    <div class="slide">
+        <img src="img\im (13).JPG" alt="Sticker 13">
+    </div>
+    <!-- Slide 14 -->
+    <div class="slide">
+        <img src="img\im (14).JPG" alt="Sticker 14">
+    </div>
+    <!-- Slide 15 -->
+    <div class="slide">
+        <img src="img\im (15).JPG" alt="Sticker 15">
+    </div>
+    <!-- Slide 16 -->
+    <div class="slide">
+        <img src="img\im (16).JPG" alt="Sticker 16">
+    </div>
+    <!-- Slide 17 -->
+    <div class="slide">
+        <img src="img\im (17).JPG" alt="Sticker 17">
+    </div>
+    <!-- Slide 18 -->
+    <div class="slide">
+        <img src="img\im (18).JPG" alt="Sticker 18">
+    </div>
+    <!-- Slide 19 -->
+    <div class="slide">
+        <img src="img\im (19).JPG" alt="Sticker 19">
+    </div>
+    <!-- Slide 20 -->
+    <div class="slide">
+        <img src="img\im (20).JPG" alt="Sticker 20">
+    </div>
+    <!-- Slide 21 -->
+    <div class="slide">
+        <img src="img\im (21).JPG" alt="Sticker 21">
+    </div>
+    <!-- Slide 22 -->
+    <div class="slide">
+        <img src="img\im (22).JPG" alt="Sticker 22">
+    </div>
+    <!-- Slide 23 -->
+    <div class="slide">
+        <img src="img\im (23).JPG" alt="Sticker 23">
+    </div>
+    <!-- Slide 24 -->
+    <div class="slide">
+        <img src="img\im (24).JPG" alt="Sticker 24">
+    </div>
+    <!-- Slide 25 -->
+    <div class="slide">
+        <img src="img\im (25).JPG" alt="Sticker 25">
+    </div>
+    <!-- Slide 26 -->
+    <div class="slide">
+        <img src="img\im (26).JPG" alt="Sticker 26">
+    </div>
+    <!-- Slide 27 -->
+    <div class="slide">
+        <img src="img\im (27).JPG" alt="Sticker 27">
+    </div>
+    <!-- Slide 28 -->
+    <div class="slide">
+        <img src="img\im (28).JPG" alt="Sticker 28">
+    </div>
+    <!-- Slide 29 -->
+    <div class="slide">
+        <img src="img\im (29).JPG" alt="Sticker 29">
+    </div>
+    <!-- Slide 30 -->
+    <div class="slide">
+        <img src="img\im (30).JPG" alt="Sticker 30">
+    </div>
+</div>
+
+<div class="cta">
+    <h2>Don't miss out!</h2>
+    <p>Call now: <strong>53204620</strong></p>
+    <p>Buy our amazing stickers now and decorate your world!</p>
+</div>
+
+<button class="prev" onclick="plusSlides(-1)">❮</button>
+<button class="next" onclick="plusSlides(1)">❯</button>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+        let i;
+        const slides = document.querySelectorAll('.slide');
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = 'none';
+        }
+        slides[slideIndex - 1].style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
